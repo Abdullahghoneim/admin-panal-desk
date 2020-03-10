@@ -1,0 +1,27 @@
+{
+  "name": "eksel",
+  "version": "1.0.0",
+  "description": "eksel Admin Panal",
+  "main": "main.js",
+  "build": {
+    "appId": "eksel",
+    "target": "NSIS",
+    "win": {
+      "icon": "assets/ms-icon-310x310.ico"
+    }
+  },
+  "nsis": {
+    "allowToChangeInstallationDirectory": true,
+    "oneClick": false
+  },
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": "Abdullah",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.1.0",
+    "electron-builder": "^22.4.0"
+  }
+}
